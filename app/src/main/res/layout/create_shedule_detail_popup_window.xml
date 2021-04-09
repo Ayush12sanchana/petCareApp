@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="250dp"
+    android:layout_gravity="center"
+    android:background="@drawable/boc_d">
+
+
+
+    <TextView
+        android:id="@+id/shedule_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shedule Name"
+        android:textColor="#cdd0cd"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Date"
+            android:textColor="#7e817d"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="#7e817d"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textColor="#7e817d"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Time"
+            android:textColor="#7e817d"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="#7e817d"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textColor="#7e817d"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/box_green"
+        android:text="D O N E"/>
+
+
+
+
+</LinearLayout>

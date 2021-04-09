@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.CreateSheduleFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/work1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/boc_c"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Walking"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"/>
+
+        <RadioButton
+            android:id="@+id/radio_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="80dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="90dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/work2"
+        android:layout_below="@+id/work1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/boc_c"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Training"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="80dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="90dp"/>
+
+
+    </LinearLayout>
+
+
+        <TextView
+            android:layout_below="@+id/work2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Training"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="100dp"/>
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text=""
+            android:textSize="30sp"
+            android:gravity="center"
+            android:background="@drawable/box_green"
+            android:layout_below="@+id/work2"
+            android:layout_gravity="center"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="25dp"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

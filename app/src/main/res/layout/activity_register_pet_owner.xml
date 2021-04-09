@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5C4DB1"
+    tools:context=".RegisterPetOwnerActivity">
+
+    <RelativeLayout
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_box_round"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:src="@drawable/ic_back"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="P E T  O W N E R"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/splashicon"
+        android:layout_below="@+id/app_details"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/white_box" >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:id="@+id/first_name_box">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview_box"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:src="@drawable/person_black"/>
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/user_first_name_txt"
+                android:layout_marginLeft="5dp"
+                android:layout_width="200dp"
+                android:hint="First Name"
+                android:textSize="15sp"
+                android:paddingLeft="10dp"
+                android:backgroundTint="#9F9F9F"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/first_name_box"
+            android:id="@+id/last_name_box">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview_box"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:src="@drawable/person_black"/>
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/user_last_name_txt"
+                android:layout_marginLeft="5dp"
+                android:layout_width="200dp"
+                android:hint="Last Name"
+                android:textSize="15sp"
+                android:paddingLeft="10dp"
+                android:backgroundTint="#9F9F9F"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/last_name_box"
+            android:id="@+id/email_box">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview_box"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:src="@drawable/ic_email"/>
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/user_email_txt"
+                android:layout_marginLeft="5dp"
+                android:layout_width="200dp"
+                android:hint="Email"
+                android:textSize="15sp"
+                android:paddingLeft="10dp"
+                android:backgroundTint="#9F9F9F"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/email_box"
+            android:id="@+id/mobile_number_box">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview_box"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:src="@drawable/ic_phone_"/>
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/user_mobile_number_txt"
+                android:layout_marginLeft="5dp"
+                android:layout_width="200dp"
+                android:hint="Mobile Number"
+                android:textSize="15sp"
+                android:paddingLeft="10dp"
+                android:backgroundTint="#9F9F9F"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/mobile_number_box"
+            android:id="@+id/password_box">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview_box"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:src="@drawable/ic_lock"/>
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/user_password_txt"
+                android:layout_marginLeft="5dp"
+                android:layout_width="200dp"
+                android:hint="Password"
+                android:textSize="15sp"
+                android:paddingLeft="10dp"
+                android:backgroundTint="#9F9F9F"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/password_box"
+            android:id="@+id/password_reenter_box">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview_box"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:src="@drawable/ic_lock"/>
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/user_password_confirm_txt"
+                android:layout_marginLeft="5dp"
+                android:layout_width="200dp"
+                android:hint="Confirm Your Password"
+                android:textSize="15sp"
+                android:paddingLeft="10dp"
+                android:backgroundTint="#9F9F9F"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/pet_owner_save_btn"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="360dp"
+            android:textSize="15sp"
+            android:background="#DC4F89"
+            android:text="Save Now !"
+            android:textColor="#ffffff"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

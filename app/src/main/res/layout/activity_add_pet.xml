@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPetActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#5C4DB1">
+
+        <RelativeLayout
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_box_round"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:src="@drawable/ic_back"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/splashicon"
+                android:layout_below="@+id/app_details"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/first_name"
+                android:text="Hi USER"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#cad7ca"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="W E L C O M E  B A C K"
+            android:textSize="12sp"
+            android:textColor="#cad7ca"
+            android:layout_marginTop="65dp"
+            android:layout_marginLeft="175dp"/>
+
+
+        <RelativeLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="130dp"
+            android:background="@drawable/white_box">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/dog_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/dog_image_icon"
+                android:layout_marginTop="10dp"
+                app:civ_border_width="2dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Dog Image"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/dog_image"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp"
+                android:id="@+id/image_text"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/image_text"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal"
+                android:background="@drawable/textview_box"
+                android:id="@+id/dog_name_box">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:paddingTop="4dp"
+                    android:paddingLeft="5dp"
+                    android:src="@drawable/dog_hand_icon"/>
+
+                <EditText
+                    android:id="@+id/pet_name_txt"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="200dp"
+                    android:hint="Name"
+                    android:textSize="12sp"
+                    android:paddingLeft="10dp"
+                    android:backgroundTint="#ffffff"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/dog_name_box"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:background="@drawable/textview_box"
+                android:id="@+id/birthday_box">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:paddingTop="4dp"
+                    android:paddingLeft="5dp"
+                    android:src="@drawable/cake_icon"/>
+
+                <EditText
+                    android:id="@+id/pet_birth_date_txt"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="200dp"
+                    android:hint="Birth Day"
+                    android:textSize="12sp"
+                    android:paddingLeft="10dp"
+                    android:backgroundTint="#ffffff"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/birthday_box"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:background="@drawable/textview_box"
+                android:id="@+id/age_box">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:paddingTop="4dp"
+                    android:paddingLeft="5dp"
+                    android:src="@drawable/age_icon"/>
+
+                <EditText
+                    android:id="@+id/pet_age_txt"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="200dp"
+                    android:hint="Age"
+                    android:textSize="12sp"
+                    android:paddingLeft="10dp"
+                    android:backgroundTint="#ffffff"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2" />
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/age_box"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:background="@drawable/textview_box"
+                android:id="@+id/weight_box">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:paddingTop="4dp"
+                    android:paddingLeft="5dp"
+                    android:src="@drawable/weight_icon"/>
+
+                <EditText
+                    android:id="@+id/pet_weight_txt"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="200dp"
+                    android:hint="Weight"
+                    android:textSize="12sp"
+                    android:paddingLeft="10dp"
+                    android:backgroundTint="#ffffff"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/weight_box"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:background="@drawable/textview_box"
+                android:id="@+id/breed_box">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:paddingTop="4dp"
+                    android:paddingLeft="5dp"
+                    android:src="@drawable/breed_icon"/>
+
+                <Spinner
+                    android:theme="@style/mySpinnerItemStyle"
+                    android:id="@+id/pet_breed_spinner"
+                    android:layout_width="175dp"
+                    android:paddingLeft="10dp"
+                    android:backgroundTint="#ffffff"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@android:color/transparent"
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/spinnerItems"/>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/arrow_drop_down_black" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+        <Button
+            android:id="@+id/pet_save_btn"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="570dp"
+            android:textSize="12sp"
+            android:background="@drawable/box_green"
+            android:text="Save Now !"
+            android:textColor="#eae9e9"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
